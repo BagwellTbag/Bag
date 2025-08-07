@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$STEWIE - The Smart Toddler's Memecoin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff0000;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav h1 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://via.placeholder.com/1920x600?text=Stewie+Coin') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #hero h2 {
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+
+        .btn {
+            background-color: #ffd700;
+            color: #1a1a1a;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            text-align: center;
+        }
+
+        /* Tokenomics Grid */
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tokenomics-item {
+            background-color: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .tokenomics-item h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* How to Buy */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .step {
+            background-color: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff0000;
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #hero h2 {
+                font-size: 2rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>$STEWIE</h1>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#buy">How to Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div>
+            <h2>$STEWIE: The Smart Toddler's Memecoin</h2>
+            <p>It’s a coin with the spirit of a toddler who built a time machine in the garage and still isn’t potty-trained. It’s dumb. It’s honest. And it might be the smartest move you make today.</p>
+            <a href="#buy" class="btn">Get $STEWIE</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About $STEWIE</h2>
+        <p>$STEWIE is a memecoin named after the only toddler smart enough to understand crypto and evil enough to actually launch one. It’s not about making sense. It’s about making noise.</p>
+        <p>If you’re tired of fake projects, fake hype, and fake CEOs with yacht backgrounds — $STEWIE is your coin.</p>
+    </section>
+
+    <section id="tokenomics">
+        <h2>Tokenomics</h2>
+        <p>Even meme coins need math (unfortunately). We didn’t overcomplicate it. No ten-layer staking farms. No weird reflections. Just a smart baby with a calculator and a mission to cause mild chaos.</p>
+        <div class="tokenomics-grid">
+            <div class="tokenomics-item">
+                <h3>Supply</h3>
+                <p>0M (Cause it sounds cooler. Also, decimals are annoying)</p>
+            </div>
+            <div class="tokenomics-item">
+                <h3>CA Renounced</h3>
+                <p>Yes, we renounced the contract. Like Stewie releasing his death ray… but with fewer explosions.</p>
+            </div>
+            <div class="tokenomics-item">
+                <h3>Liquidity</h3>
+                <p>0% 🔥 Burned. On purpose. Forever. Just like Stewie’s trust in adults.</p>
+            </div>
+            <div class="tokenomics-item">
+                <h3>Baby Tax</h3>
+                <p>0%. We considered taxing Peter every time he said “freakin’ sweet,” but the blockchain can’t handle that many transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy">
+        <h2>How to Buy $STEWIE</h2>
+        <p>Getting $STEWIE is easier than explaining NFTs to Peter.</p>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Download a Wallet</h3>
+                <p>Use MetaMask, not your actual wallet — we’ve seen that.</p>
+            </div>
+            <div class="step">
+                <h3>2. Buy $ETH</h3>
+                <p>Plain & Simple. Add $ETH to your wallet.</p>
+            </div>
+            <div class="step">
+                <h3>3. Head to Uniswap</h3>
+                <p>Go to Uniswap or any DEX.</p>
+            </div>
+            <div class="step">
+                <h3>4. Swap</h3>
+                <p>Add $STEWIE Contract and Swap $ETH to $STEWIE.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 $STEWIE. All rights reserved. Built by a toddler with a time machine.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
